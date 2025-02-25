@@ -11,7 +11,10 @@ export default {
       sans: ["Geist", "sans-serif"],
       mono: ["Geist Mono",
       "monospace"],
-    }
+    },
+    gridTemplateRows:{
+      app: "min-content max-content",
+    },
   },
   plugins: [],
 } satisfies Config;
