@@ -1,0 +1,7 @@
+{
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": null,
+  "editor.indentSize": "tabSize",
+  "editor.language.colorizedBracketPairs": [],
+  //"dotnetAcquisitionExtension.installTimeoutValue": 0
+}

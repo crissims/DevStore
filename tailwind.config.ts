@@ -7,14 +7,16 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily:{
-      sans: ["Geist", "sans-serif"],
-      mono: ["Geist Mono",
-      "monospace"],
-    },
-    gridTemplateRows:{
-      app: "min-content max-content",
-    },
+      extend: {
+          fontFamily:{
+            sans: ["Geist", "sans-serif"],
+            mono: ["Geist Mono",
+            "monospace"],
+          },
+          gridTemplateRows:{
+            app: "min-content max-content",
+          },
+      },
   },
   plugins: [],
 } satisfies Config;
