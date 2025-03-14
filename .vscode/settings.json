@@ -3,5 +3,12 @@
   "editor.defaultFormatter": null,
   "editor.indentSize": "tabSize",
   "editor.language.colorizedBracketPairs": [],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "workbench.colorTheme": "Tokyo Night",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
   //"dotnetAcquisitionExtension.installTimeoutValue": 0
 }
