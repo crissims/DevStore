@@ -6,13 +6,20 @@ import Image from "next/image";
 interface ProductProps {
     params: {
         slug: string;
-    }
+    };
 }
+
+
+
+
+
+
+
 
 async function getProduct(slug: string): Promise<Product> {
     const response = await api(`/products/${slug}`, {
         next: {
-            revalidate: 25 * 25,
+            revalidate: 60 * 60,
         }
     });
 
@@ -27,6 +34,21 @@ export async function generateMetadata({ params }: ProductProps): Promise<Metada
         title: product.title,
     }
 }
+
+export type paramsType = Promise<{ slug: string }>
+
+export async function generateStaticParams(props: { params: paramsType }) {
+    const response = await api('/products/featured');
+    const products: Product[] = await response.json();
+
+    return products.map((product) => {
+        return {
+            slug: product.slug
+        };
+    });
+}
+
+
 
 export default async function ProductPage({ params }: ProductProps) {
     const product = await getProduct(params.slug)

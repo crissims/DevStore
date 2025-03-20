@@ -6,9 +6,10 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "workbench.colorTheme": "Tokyo Night",
+  "workbench.colorTheme": "Forest Focus",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "typescript.tsdk": "node_modules\\typescript\\lib",
   //"dotnetAcquisitionExtension.installTimeoutValue": 0
 }
